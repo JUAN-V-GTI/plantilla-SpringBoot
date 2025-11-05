@@ -1,0 +1,151 @@
+# ============================================
+# TEST PROFILE
+# src/test/resources/application-test.yml
+# ============================================
+
+spring:
+  # ============================================
+  # DATASOURCE (H2 en memoria para tests)
+  # ============================================
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+    hikari:
+      maximum-pool-size: 2
+      minimum-idle: 1
+  
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        generate_statistics: false
+  
+  h2:
+    console:
+      enabled: false
+  
+  # ============================================
+  # SECURITY (Deshabilitada para tests)
+  # ============================================
+  security:
+    user:
+      name: test
+      password: test
+      roles: USER,ADMIN
+  
+  # ============================================
+  # RABBITMQ (Test Binder)
+  # ============================================
+  cloud:
+    stream:
+      default-binder: test
+      bindings:
+        templateProducer-out-0:
+          destination: test-events
+          content-type: application/json
+        templateConsumer-in-0:
+          destination: test-events
+          content-type: application/json
+          group: test-group
+  
+  # ============================================
+  # FLYWAY / LIQUIBASE (Deshabilitados)
+  # ============================================
+  flyway:
+    enabled: false
+  liquibase:
+    enabled: false
+
+# ============================================
+# SERVER
+# ============================================
+server:
+  port: 0  # Puerto aleatorio
+
+# ============================================
+# EUREKA (Deshabilitado en tests)
+# ============================================
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
+
+# ============================================
+# ACTUATOR (Solo health)
+# ============================================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+# ============================================
+# LOGGING (Mínimo en tests)
+# ============================================
+logging:
+  level:
+    root: WARN
+    com.company.template: DEBUG
+    org.springframework.web: WARN
+    org.springframework.security: WARN
+    org.hibernate.SQL: DEBUG
+    org.testcontainers: INFO
+  
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:%5p}) %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n"
+
+# ============================================
+# SPRINGDOC (Deshabilitado en tests)
+# ============================================
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+
+# ============================================
+# RESILIENCE4J (Configuración rápida para tests)
+# ============================================
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-size: 5
+        minimum-number-of-calls: 3
+        wait-duration-in-open-state: 1s
+        failure-rate-threshold: 50
+  retry:
+    configs:
+      default:
+        max-attempts: 1
+  ratelimiter:
+    configs:
+      default:
+        limit-for-period: 1000
+
+# ============================================
+# FEIGN (Timeouts cortos)
+# ============================================
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 1000
+        read-timeout: 2000
+        logger-level: FULL
+
+# ============================================
+# DEBUG FLAGS
+# ============================================
+debug: false
+trace: false
