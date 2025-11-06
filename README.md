@@ -1,25 +1,31 @@
-#  Banregio – Plantilla Base para Microservicios Backend
+# 🏢 Banregio – Plantilla Base para Microservicios Backend
 
 > Proyecto desarrollado por Grupo TI para estandarizar la arquitectura de microservicios en Banregio.  
 > Esta plantilla está diseñada para ser modular, escalable y alineada con las mejores prácticas corporativas.
 
-📋 Tabla de Contenido
+---
 
-Propósito
-Estructura de Carpetas
-Convenciones de Nombres
-Documentación Swagger
-Endpoints RESTful
-Pruebas Unitarias
-Seguridad JWT
-Entornos
-Recomendaciones Finales
+## 📚 Tabla de Contenido
 
+- [Propósito](#propósito)
+- [Estructura de Carpetas](#estructura-de-carpetas)
+- [Convenciones de Nombres](#convenciones-de-nombres)
+- [Documentación Swagger](#documentación-swagger)
+- [Endpoints RESTful](#endpoints-restful)
+- [Pruebas Unitarias](#pruebas-unitarias)
+- [Seguridad JWT](#seguridad-jwt)
+- [Entornos](#entornos)
+- [Recomendaciones Finales](#recomendaciones-finales)
 
-🎯 Propósito
+---
+
+## 🎯 Propósito
+
 Esta plantilla sirve como base para el desarrollo de microservicios backend en Banregio, siguiendo los estándares corporativos de arquitectura, nombrado, documentación y pruebas. Está diseñada para ser escalable, modular y fácil de mantener.
 
-📁 Estructura de Carpetas
+---
+
+## 🧱 Estructura de Carpetas
 
 src/
 └── main/
@@ -47,11 +53,11 @@ src/
         ├── banner.txt
         └── logback-spring.xml
 
-📝 Convenciones de Nombres
+## 📝 Convenciones de Nombres
 <details>
 <summary><strong>📌 Proyecto</strong></summary>
 Evitar marcas:
-
+ 
 ❌ banregio
 ❌ api
 ❌ backend
@@ -85,7 +91,7 @@ PersonaModel
 
 </details>
 
-📘 Documentación Swagger
+## 📘 Documentación Swagger
 <details>
 <summary><strong>✅ Anotaciones en controladores</strong></summary>
 ```java
@@ -108,7 +114,7 @@ public class ClienteDto {
 ```
 </details>
 
-🌐 Endpoints RESTful
+## 🌐 Endpoints RESTful
 <details>
 <summary><strong>📌 Buenas prácticas</strong></summary>
 Usar sustantivos en plural:
@@ -132,9 +138,9 @@ Versionar si hay cambios estructurales:
 
 </details>
 
-🧪 Pruebas Unitarias
+## 🧪 Pruebas Unitarias
 <details>
-<summary><strong>📌 Recomendaciones</strong></summary>
+<summary><strong> Recomendaciones</strong></summary>
 
 Ubicar en src/test/java
 El paquete debe coincidir con el de la clase a probar
@@ -151,7 +157,7 @@ Validar métodos con lógica de negocio (Service)
 
 </details>
 
-🔐 Seguridad JWT
+## 🔐 Seguridad JWT
 <details>
 <summary><strong>📌 Integración recomendada</strong></summary>
 
@@ -161,9 +167,9 @@ Documentar en Swagger los headers requeridos
 
 </details>
 
-🌍 Entornos
+##  Entornos
 <details>
-<summary><strong>📌 Configuración por entorno</strong></summary>
+<summary><strong> Configuración por entorno</strong></summary>
 
 application-dev.properties → desarrollo local
 application-prod.properties → producción
@@ -172,7 +178,7 @@ application-test.properties → pruebas automatizadas
 Evita sobrescribir propiedades manualmente entre entornos
 </details>
 
-✅ Recomendaciones Finales
+## ✅ Recomendaciones Finales
 
 Usa @Configuration para centralizar ajustes
 Evita lógica en Controller y Facade
@@ -181,7 +187,4 @@ Aplica pruebas unitarias en Service
 Mantén consistencia en nombres y estructura
 
 
-📞 Contacto
-Para dudas o soporte, contacta al equipo de Grupo TI de Banregio.
 
-Desarrollado con ❤️ por Grupo TI - Banregio
