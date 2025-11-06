@@ -1,0 +1,19 @@
+2025-11-03 19:22:13.141 [restartedMain] ERROR com.zaxxer.hikari.HikariConfig - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@266474c2
+2025-11-04 20:06:12.775 [restartedMain] ERROR com.zaxxer.hikari.HikariConfig - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@266474c2
+2025-11-04 20:17:59.263 [restartedMain] ERROR com.zaxxer.hikari.HikariConfig - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@266474c2
+2025-11-04 20:22:21.330 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:24:40.353 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:31:13.681 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:32:58.801 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:34:40.872 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:37:16.926 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:37:25.555 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:46:57.860 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:48:31.483 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:48:45.261 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 20:57:22.623 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 21:25:00.296 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 21:32:07.715 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 21:35:09.520 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 21:43:56.944 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�
+2025-11-04 22:02:49.459 [restartedMain] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - FATAL: la autentificaci�n password fall� para el usuario �PruebasConexion�

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceTemplateApplication<service-template>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.company.service_template.ServiceTemplateApplication",
+            "projectName": "service-template",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
